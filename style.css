@@ -14,6 +14,8 @@
 
 .description-text{
     color: #727272;
+    padding: 0 0 20px 0;
+    font-size: 1rem;
 }
 .btn-primary{
     padding: 20px 25px;
@@ -63,10 +65,7 @@ nav li a{
     font-weight: 700;
     color: #131313;
 }
-.description-text{
-    color: #727272;
-    font-size: 1rem;
-}
+
 .banner-section img{
     width: 100%;
     margin-top: 50px;
@@ -98,6 +97,7 @@ main{
 }
 .team-content-title{
     font-size: 2.813rem;
+    margin-bottom: 30px;
 }
 
 .span-one{
@@ -109,10 +109,64 @@ main{
     font-weight: 700;
 }
 
-/* Facts Styles */
+/* Features Section Styles */
+    .features{
+        margin-top: 130px;
+        display: flex;
+        gap: 130px;
+    }
+    .features-content .section-title{
+        border-left: 5px solid #FF900E;
+        padding-left: 20px;
+    }
+    .features-content .card{
+        border-radius: 8px;
+        background: #fff;
+        padding: 18px 30px;
+        margin-bottom: 20px;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    }
+    .features-content .card > h4{
+        font-size: 20px;
+        margin-top: 10px;
+    }
+    .features-content .card-description{
+        color: #727272;
+        font-size: 1rem;
+    }
+
+    /* .features-img img{
+        height: 100%;
+    } */
+
+    .badge{
+        width: 342px;
+        text-align: center;
+        padding: 20px 5px;
+        background: #FF900E;
+        color: #fff;
+        border-radius: 8px;
+        position: relative;
+        bottom: 80px;
+        right: 80px;
+     }   
+     .badge h2{
+        font-size: 4rem;
+        margin: 20px 0 0 0;
+     }
+     .badge p{
+        font-size: 1.5rem;
+        margin-top: 5px;
+     }
+
+
+     /* Facts Styles */
+
+
 .facts-container{
     display: flex;
     justify-content: space-around;
+    margin-top: 80px;
 }
 .facts-container .card{
     border: 1px solid #FF900E;
@@ -124,6 +178,7 @@ main{
     font-weight: 600;
     font-size: 1.25rem;
     margin-top: 5px;
+    color: #727272;
 }
 .facts-container .card-stats{
     font-size: 2.813rem;
@@ -135,6 +190,7 @@ main{
 
 .sponsors{
     text-align: center;
+    margin-top: 150px;
 }
 .sponsors-img-container{
     display: flex;
