@@ -201,7 +201,21 @@ main{
 }
 .sponsors-img-container img{
     width: 165px;
-    
+    filter: grayscale(); 
+}
+
+footer{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+.footer{
+    background: #FFF4E7;
+    text-align: center;
+    padding: 20px 0;
+    width: 1440px;
+    margin: 0 auto;
+    border-radius: 8px;
+    font-size: 1.25rem;
 }
 
 
@@ -209,23 +223,38 @@ main{
 
 @media screen and (max-width:576px){
     header,  
-    .team-content, .facts
-    {
+    .team-content,
+    .features, 
+    .facts, 
+    .sponsors, footer{
         padding: 20px;
     }
     nav,
     .team-container,
+    .features,
     .facts-container,
     .sponsors-img-container{
         flex-direction: column;
     } 
+    .features-img img, .footer{
+        width: 100%;
+        /* margin-top: 0;  */
+    }
+    .badge{
+        max-width: 310px;
+        position: static;
+        bottom: 50px;
+        /* margin-bottom: 50px; */
+    }
     .team-images{
         grid-template-columns: 1fr; 
     }
     .facts-container{
-        gap: 20px;    
+        gap: 20px;     
     }
-
+    .footer {
+        line-height: 40px;
+    }
 }
 
 
@@ -233,13 +262,30 @@ main{
 /* Tablate Divices */
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
-    header{
-        padding: 30px;
+    header,
+    .features,
+    .facts, footer
+    {
+        padding: 30px; 
+    }
+    .facts-container .card{
+        margin-bottom: 20px;
     }
     nav,
     .team-container,
+    .features,
+    .facts-container,
     .sponsors-img-container{
         flex-direction: column; 
-        
     }
+    .features-img img, .footer{
+        width: 100%; 
+    } 
+    .badge{
+        width: 98.5%;
+        left: 0%;
+        /* position: ; */
+        bottom: 50px;
+    }
+
 }
